@@ -11,6 +11,7 @@ export class AppComponent {
   title = 'Hello From BridgeLabz';
   imgUrl="../assests/images/download.png";
   url="https://www.bridgelabz.com";
+  userName : string ="Suraj";
 
   onClick(){
     console.log("Save Button is Clicked : ");
