@@ -9,4 +9,5 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'Hello From BridgeLabz';
+  imgUrl="../assests/images/download.png";
 }
