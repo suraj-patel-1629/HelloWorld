@@ -1,0 +1,43 @@
+/* Center the main container */
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  height: 100vh; /* Full viewport height */
+}
+
+
+
+/* Style for the image */
+img {
+  width: 150px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Style for the input field */
+input {
+  padding: 8px;
+  margin-top: 10px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Error message styling */
+.error-output {
+  display: block;
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+.success-output {
+  display: block;
+  color:green;
+  font-size: 14px;
+  margin-top: 5px;
+  font-weight: bold;
+}

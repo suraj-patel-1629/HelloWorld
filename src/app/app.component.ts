@@ -14,6 +14,7 @@ export class AppComponent {
   url="https://www.bridgelabz.com";
   userName : string ="";
   nameError:string="";
+  isValidName: boolean = false;
 
   onClick(){
     console.log("Save Button is Clicked : ");
@@ -23,9 +24,14 @@ export class AppComponent {
    onInput(): void{
     console.log("change Event Occured!");
     const nameRegex=RegExp(`^[A-Z]{1}[a-zA-Z\\s]{2,}$`);
-    if(nameRegex.test(this.userName)){
-      this.nameError="";
+    if(!nameRegex.test(this.userName)){
+      this.nameError="Incorrect Name";
+      this.isValidName=false;
       return;
+    }
+    else{
+       this.isValidName=true;
+      this.nameError="Correct Name";
     }
     
    }
